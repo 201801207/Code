@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project Progess - prof.</title>
+    <link rel="stylesheet" href="../CSS/AddProjectProgess-prof.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="main-main-container-css">
+        <!--Nav Bar Start-->
+        <nav class="navbar navbar-fixed-top" style="background-color: #2B6777;  font-family: abril Fatface; ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu"
+                        style="background-color: #DFC63E; color: white;">
+                        <spam class="icon-bar" style="font-size: 10px; color: white;">
+                            <img src="../Img/3-line.jpg" alt="3-Line" style="height: 22px; margin-top: -5px;">
+                        </spam>
+                        <spam class="icon-bar"></spam>
+                        <spam class="icon-bar"></spam>
+                    </button>
+                    <figure>
+                        <img src="../Img/DA - Logo.jpg" class="img-fluid DA-Logo-img" alt="DA-IICT Logo">
+                    </figure>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav" style="float: right;">
+                        <li><a style="padding-top: 0.5rem;" class="nav-butten-css-create"
+                                href="./createproject-prof.html">
+                                <p>create</p>
+                                <p>Project</p>
+                            </a></li>
+                        <li><a class="nav-butten-css" href="./homepage-prof.html">Home Page</a></li>
+                        <li><a class="nav-butten-css" href="./Myproject-prof.html">My Project</a></li>
+                        <li><a class="nav-butten-css" href="./profile-Prof.html">Profile</a></li>
+                        <li><a class="nav-butten-css" href="./timetable-prof.html">Time Table</a></li>
+                        <li><a class="nav-butten-css" href="#" onclick="opennotification()">Notification </a></li>
+                        <li><a class="nav-butten-css" href="../Student/Display.html">Logout</a></li>
+                    </ul>
+                </div>
+
+                  <!--Notification HTML Start -->
+       <div id="mynotification" class="form-popup nav nav-pills nav-stacked" style=" overflow-y: scroll;">
+        <p style="margin: 5px;" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima inventore sapiente veritatis ab
+            necessitatibus recusandae fuga dolore dolorem, aspernatur nisi molestiae cum quam, pariatur
+            adipisci, ad
+            laudantium ullam dicta ipsa.</p>
+        <hr>
+        <p style="margin: 5px;" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima inventore sapiente veritatis ab
+            necessitatibus recusandae fuga dolore dolorem, aspernatur nisi molestiae cum quam, pariatur
+            adipisci, ad
+            laudantium ullam dicta ipsa.</p>
+        <hr>
+        <p style="margin: 5px;" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima inventore sapiente veritatis ab
+            necessitatibus recusandae fuga dolore dolorem, aspernatur nisi molestiae cum quam, pariatur
+            adipisci, ad
+            laudantium ullam dicta ipsa.</p>
+        <hr>
+        <p style="margin: 5px;" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima inventore sapiente veritatis ab
+            necessitatibus recusandae fuga dolore dolorem, aspernatur nisi molestiae cum quam, pariatur
+            adipisci, ad
+            laudantium ullam dicta ipsa.</p>
+        <hr>
+    </div>
+
+    <!--Notification HTML End -->
+
+            </div>
+        </nav>
+
+        <!--Nav Bar End-->
+
+        <!-- Main section start-->
+
+        <div class="main-Profile-container-css" >
+            <span class="profile-edit-css">
+                <b>Project Progess</b>
+            </span>
+        </div>
+
+        <div class="container rounded main-learn-container-css">
+            <div class="row">
+                <div class="col-css">
+                    <div class="col-md-12 col-name-line-css" style="font-size: 2rem;">
+                        <label class="labels" style="width: 24rem;">Work completed date: </label>
+                        <tr>
+                            <textarea class="input-box-css" name="text" placeholder=""></textarea>
+                        </tr>
+                    </div>
+
+                    <div class="col-md-12 col-name-line-css" style="font-size: 2rem;">
+                        <label class="labels" style="width: 24rem;"> Work: </label>
+                        <tr>
+                            <textarea class="input-box-css" name="text" placeholder=""></textarea>
+                        </tr>
+                    </div>
+
+                    <div class="col-md-12 col-name-line-css" style="font-size: 2rem;">
+                        <label class="labels" style="width: 24rem;">Mark (Out of 10): </label>
+                        <tr>
+                            <textarea class="input-box-css" name="text" placeholder=""></textarea>
+                        </tr>
+                    </div>
+                    <!--Butten Start-->
+                    <div class="main-Profile-butten-container-css">
+                        <span>
+                            <button class="btn profile-button edit-butten-css"
+                                style="font-size: 2.8rem; border-radius: 3rem; padding-top: 0rem; "
+                                type="button">
+                                <a href="./Learnmore-prof.html" style="color: black; text-decoration: none;">
+                                   <b>Submit</b>  </a>
+                            </button></span>
+                    </div>
+                    <!--Butten End-->
+                </div>
+            </div>
+
+            <!--main section End-->
+        </div>
+    </div>
+    <!--Notification js Start -->
+    <script>
+        function opennotification() {
+            document.getElementById("mynotification").style.display = "block";
+
+            window.addEventListener('mouseup', function (event) {
+                var box = document.getElementById('mynotification');
+                if (event.target != box && event.target.parentNode != box) {
+                    box.style.display = 'none';
+                }
+            }
+            );
+        }
+    </script>
+     <!--Notification js End -->
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../CSS/SignIN1.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+    </style>
+</head>
+
+<body>
+     <!--Sign In Form-->
+     <div class="container">
+     <div class="form-popup " >
+        <form action="/action_page.php" class="form-container">
+            <div class="login-close">
+                <b class="H1container">Sign In</b> 
+                    <span class="btn-close" onclick="closeForm()">X</span>
+            </div>
+            <div class="googlelogin">
+                <img class="google-logo-img" src="../Img/Google.png" alt="Google Logo" />
+                <a href="#" class="google">
+                    Sign In with Google
+                </a>
+            </div>
+            <p class="or">Or</p>
+
+            <p for="email" class="FirstName"><b>Email ID:</b></p>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <p for="psw" class="FirstName"><b>Password:</b></p>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button  type="submit" class="btn">
+                <a class="btn" href="./Homepage.html">Sign In</a>
+                </button>
+
+            <p class="New">New to This?</p>
+            <button class="New2">
+                Sign Up
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

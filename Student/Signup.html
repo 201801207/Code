@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign UP</title>
+    <link rel="stylesheet" href="../CSS/Signup1.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+    </style>
+</head>
+
+<body>
+    <!--Sign Up Form-->
+    <div class="container">
+        <div class="form-Signup-popup">
+            <form action="/action_page.php" class="form-container">
+                <div class="login-close">
+                    <b class="H1container">Sign Up</b>
+                    <span class="btn-close" onclick="closeSignupForm()">X</span>
+                </div>
+                <div class="Signup-googlelogin">
+                    <img class="google-logo-img" src="../Img/Google.png" alt="Google Logo" />
+                    <a href="#" class="google">
+                        Sign Up with Google
+                    </a>
+                </div>
+                <p class="or">Or</p>
+
+                <p for="First Name" class="FirstName"><b>First Name:</b></p>
+                <input type="text" placeholder="Enter First Name" name="First Name" required>
+
+                <p for="Last Name" class="FirstName"><b>Last Name:</b></p>
+                <input type="text" placeholder="Enter Last Name" name="Last Name" required>
+
+                <p for="Last Name" class="FirstName"><b>User Name:</b></p>
+                <input type="text" placeholder="Enter User Name" name="User Name" required>
+
+                <p for="email" class="FirstName"><b>Email ID:</b></p>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <p class="FirstName"> <b>User Type:</b>
+                <input type="radio" id="Student" name="fav_language" value="Student" class="FirstName">
+                <label for="Student" class="FirstName">Student</label>
+                <input type="radio" id="Professor" name="fav_language" value="Professor" class="FirstName">
+                <label for="Professor" class="FirstName">Professor</label></p>
+                
+
+                <p for="psw" class="FirstName"><b>Password:</b></p>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <p for="psw" class="FirstName"><b>Confirm Password:</b></p>
+                <input type="password" placeholder="Enter Confirm Password" name="cpsw" required>
+
+                <button type="submit" class="Signup-btn">
+                    <a class="Signup-btn" href="./Homepage.html">Sign Up</a>
+                </button>
+
+                <p class="Signup-New">Already have an Account?</p>
+                <button class="Signup-New2">
+                    Sign In
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
