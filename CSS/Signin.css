@@ -1,253 +1,359 @@
-/** {
-  padding: 0px;
-  margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
 
-.main-container {
-  position: relative;
-}
+  body {
+    background-image: url('../Img/Back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+  }
 
-.container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  text-align: center;
-}
+  .container {
+    position: relative;
+    text-align: center;
+  }
 
-.back-img {
-  width: 1440px;
-  filter: brightness(60%);
-}
-
-.textbox {
-  color: white;
-  position: absolute;
-  left: 25.69%;
-  top: 6.7%;
-  width: 48.61%;
-  font-size: 50px;
-  font-family: Abril Fatface;
-  filter: brightness(60%);
-}
-
-.daiict-logo-img {
-  border-radius: 270px;
-  position: absolute;
-  margin-top: 21.28%;
-  /*top: 28.03%;*/
- /* left: 37.85%;
-  width: 24.3%;
-  filter: brightness(60%);
-}
-
-.studentlogin {
-  color: white;
-  position: absolute;
-  left: 39%;
-  top: 66.11%;
-  width: 22%;
-  font-size: 40px;
-  font-family: Abril Fatface;
-  filter: brightness(60%);
-}
-
-.professorlogin {
-  color: white;
-  position: absolute;
-  left: 39%;
-  top: 74.22%;
-  width: 22%;
-  font-size: 40px;
-  font-family: Abril Fatface;
-  filter: brightness(60%);
-}
-
-.loginpage {
-  height: 92.7%;
-  position: absolute;
-  background-color: white;
-  width: 30%;
-  left: 35%;
-  top: 3.65%;
-}
-
-.H1container {
-  background-color: #03fba2;
-  color: black;
-  padding-right: 34%;
-  padding-left: 34%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  height: 40pt;
-  font-size: 40px;
-  width: 146px;
-}
-
-.FirstName {
-  color: black;
-  font-size: 35px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding-left: 25px;
-  margin-top: 50px;
-}
-
-/* Full-width input fields */
-/*input[type="text"],
-input[type="password"] {
-  width: 80%;
-  padding: 15px;
-  margin: 5px 10px 22px 25px;
-  border: none;
-  background: #c4c4c4;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit button */
-/*.btn {
-  background-color: #04aa6d;
-  color: white;
-  font-size: 40px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.9;
-  padding-right: 28.5%;
-  padding-left: 28.5%;
-  padding-bottom: 10px;
-  margin-left: 31px;
-  height: 70px;
-  margin-top: 30px;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-/* Two-column layout */
-/*.googlelogin {
-  background-color: #c4c4c4;
-  padding: 10px;
-  margin: 20px;
-  margin-top: 80px;
-}
-
-.google {
-  color: black;
-  font-size: 30px;
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.google-logo-img {
-  width: 54px;
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 35px;
-}
-
-.or {
-  font-size: 24px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.New {
-  text-decoration: none;
-  padding-left: 160px;
-  padding-top: 30px;
-  font-size: 24px;
-  margin-top: 30px;
-}
-
-.nextnew2 {
-  text-decoration: none;
-}
-
-.New2 {
-  text-decoration: none;
-  padding-left: 191px;
-  margin-top: 15px;
-  font-size: 24px;
-  color: #a42d66;
-  margin-top: 30px;
-}
-
- {box-sizing: border-box;}
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
+  
+/*Sign IN/ Sign UP page CSS Start*/
 
 /* The popup form - hidden by default */
 .form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-} 
+    
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    
+   /* position: fixed;*/
+    margin-left: 32%;
+    width: 36%;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    padding: 1rem;
+    max-height: 80%;
+    margin-top: 2rem;
+    background-color: white;
+  }
+  
+  .login-close{
+    display: flex;
+  }
+  
+  .H1container {
+    color: black;
+    max-width: 50rem;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .btn-close{
+    padding: 2rem;
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+   /* position: fixed;*/
+    max-width: 10rem;
+    font-size: 2rem;
+    margin-left: 64%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  /* Two-column layout */
+  .googlelogin {
+    background-color: #c4c4c4;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 96%;
+    margin-left: 2%;
+  }
+  
+  .google-logo-img {
+    width: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .google {
+    color: black;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .or {
+    font-size: 24px;
+    margin-top: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .FirstName {
+    color: black;
+    font-size: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-left: 0rem;
+    padding-left: 0.5rem;
+    width: fit-content;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Full-width input fields */
+  input[type="text"],
+  input[type="password"] {
+    border: none;
+    padding: 1.3rem;
+    background: #c4c4c4;
+    width: 96%
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+    width: 90%;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .New {
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top: 3rem ;
+  }
+  
+  .nextnew2 {
+    text-decoration: none;
+  }
+  
+  .New2 {
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top: 2rem ;
+    color: #a42d66;
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .form-Signup-popup{
+    display: none;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: none;
+    /*position: fixed;*/
+    margin-left: 32%;
+    width: 36%;
+  }
+  
+  .Signup-googlelogin{
+    background-color: #c4c4c4;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 96%;
+    margin-left: 2%;
+  }
+  
+  .Signup-btn {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+    width: 90%;
+    text-decoration: none;
+  }
+  
+  .Signup-btn:hover {
+    opacity: 1;
+  }
+  
+  .Signup-New {
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top: 1rem ;
+  }
+  
+  .Signup-New2 {
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top: 0rem ;
+    color: #a42d66;
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  /*Sign IN/ Sign UP page CSS End*/
+  
+  /*media for Sign IN/ Sign UP start*/
+  @media (max-width: 1470px) {
+    .btn-close{
+      margin-left: 63%;
+    }
+  }
+  
+  @media (max-width: 1426px) {
+    .btn-close{
+      margin-left: 58%;
+    }
+  }
+  
+  @media (max-width: 1262px) {
+    .btn-close{
+      margin-left: 55%;
+    }
+  }
+  
+  @media (max-width: 1180px) {
+    .btn-close{
+      margin-left: 50%;
+    }
+  
+    .form-popup {
+      width: 40%;
+      margin-left: 30%;
+    }
+  
+    .form-Signup-popup{
+      width: 40%;
+      margin-left: 30%;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .btn-close{
+      margin-left: 48%;
+    }
+  
+    .form-popup {
+      width: 46%;
+      margin-left: 27%;
+    }
+  
+    .form-Signup-popup{
+      width: 46%;
+      margin-left: 27%;
+    }
+  }
+  
+  @media (max-width: 810px) {
+    .btn-close{
+      margin-left: 45%;
+    }
+  
+    .form-popup {
+      width: 56%;
+      margin-left: 23%;
+    }
+  
+    .form-Signup-popup{
+      width: 56%;
+      margin-left: 23%;
+    }
+  }
+  
+  
+  /*Media for textbox student login and prof login*/
+  @media (max-width: 674px) {
+    /*Display Page css*/
+    .textbox {
+      font-size: 4rem;
+      width: 40rem;
+    }
+  
+    .studentlogin{
+      font-size: 2.5rem;
+      margin-top: 55rem;
+    }
+  
+    .professorlogin{
+      font-size: 2.5rem;
+      margin-top: 60rem;
+    }
+  
+    .daiict-logo-img {
+      width: 30rem;
+    }
+  
+    /*Sign up/ Sign In css*/
+    .btn-close{
+      margin-left: 40%;
+    }
+  
+    .form-popup {
+      width: 62%;
+      margin-left: 19%;
+    }
+  
+    .form-Signup-popup{
+      width: 62%;
+      margin-left: 19%;
+    }
+  
+    .google {
+      font-size: 2.5rem;
+    }
+  }
+  
+  
+  @media (max-width: 550px) {
+    .btn-close{
+      margin-left: 38%;
+    }
+  
+    .form-popup {
+      width: 80%;
+      margin-left: 10%;
+    }
+  
+    .form-Signup-popup{
+      width: 80%;
+      margin-left: 10%;
+    }
+  
+    .google {
+      font-size: 2rem;
+    }
+  }
